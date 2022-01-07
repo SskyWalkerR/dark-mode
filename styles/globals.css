@@ -1,16 +1,15 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu-card {
+    @apply flex flex-col justify-center items-center bg-white dark:bg-black dark:text-white font-mono h-screen px-20 md:mx-72 md:p-0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.center-content {
+    @apply flex flex-col justify-center items-center mt-20;
 }
 
-* {
-  box-sizing: border-box;
+.dark-mode-animation {
+    @apply transition delay-300 ease-in-out;
 }
